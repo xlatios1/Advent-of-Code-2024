@@ -1,0 +1,16 @@
+import requests
+from credentials import cookies_session_data
+
+url = 'https://adventofcode.com/2024/day/9/input'
+response = requests.get(url, cookies=cookies_session_data)
+datas = response.text.split("\n")
+
+
+def solve_part1():
+    ...
+def solve_part2():
+    ...
+
+# print("Solution 1: ", solve_part1(datas))
+# print("Solution 2: ", solve_part2(datas))
+pass

@@ -1,0 +1,5 @@
+.env
+.vscode
+opencv
+aoc_env
+__pycache__
