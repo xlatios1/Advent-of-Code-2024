@@ -40,9 +40,9 @@ def solve_part1(data, map_boundary, boundary, seconds):
         final_col = (p[1] + v[1] * seconds) % map_boundary[1]
         if final_row != boundary[0] and final_col != boundary[1]:
             if final_row < boundary[0] and final_col < boundary[1]: quadrants[0] += 1
-            if final_row < boundary[0] and final_col > boundary[1]: quadrants[1] += 1
-            if final_row > boundary[0] and final_col < boundary[1]: quadrants[2] += 1
-            if final_row > boundary[0] and final_col > boundary[1]: quadrants[3] += 1
+            elif final_row < boundary[0] and final_col > boundary[1]: quadrants[1] += 1
+            elif final_row > boundary[0] and final_col < boundary[1]: quadrants[2] += 1
+            elif final_row > boundary[0] and final_col > boundary[1]: quadrants[3] += 1
     return quadrants[0]*quadrants[1]*quadrants[2]*quadrants[3]
 
 def solve_part2(data, map_boundary):
